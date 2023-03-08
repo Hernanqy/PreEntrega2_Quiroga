@@ -9,7 +9,7 @@ function ProductItem({ productos }) {
     <div className="container ">
       <div d-flex justify-content-center>
         {" "}
-        <Button className="m-2 " size="lg" variant="danger">
+        <Button className="m-2 " size="lg" variant="primary">
           <a href="/productos" className="text-dark">Volver</a>
         </Button>
       </div>
