@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 
 const CardItem = ({ producto }) => {
+  
   return (
     
     <div className="d-inline-flex flex-wrap  ">

@@ -34,12 +34,13 @@ function App() {
     <>
     
       <Navb/>
-      <ItemListContainer greeting="Hola somos Gravita" />
+      <ItemListContainer  greeting="Gravita" />
 
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/productos' element={<ProductList productos ={productos}/>}/>
       <Route path='/productos/:id' element={<ProductItem productos ={productos} />}/>
+      <Route path='/categorias/:cat' element={<ProductList productos ={productos} />}/>
       
       </Routes>
     </>

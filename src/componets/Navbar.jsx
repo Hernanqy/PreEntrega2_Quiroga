@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 import Img1 from '../assets/gravitalogo.jpg'
 import CartWidget from './CartWidget';
@@ -16,15 +17,20 @@ function Navb() {
           <Nav className="mx-auto">
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/productos">Productos</Nav.Link>
-            <NavDropdown title="Menu" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Pantalones
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Polleras</NavDropdown.Item>
+            
+            
+            
+            <NavDropdown title="Categorias" id="basic-nav-dropdown">
+              
+              <NavDropdown.Item ><Nav.Link href="/productos"><Link className='text-dark'  to="/categorias/men's clothing">Hombre</Link></Nav.Link> </NavDropdown.Item> 
+              <NavDropdown.Item ><Nav.Link href="/productos"><Link className='text-dark'  to="/categorias/jewelery">Joyeria</Link></Nav.Link> </NavDropdown.Item> 
+              <NavDropdown.Item ><Nav.Link href="/productos"><Link className='text-dark' to="/categorias/electronics">Electronica</Link></Nav.Link> </NavDropdown.Item> 
+              <NavDropdown.Item ><Nav.Link href="/productos"><Link className='text-dark' to="/categorias/women's clothing">Mujer</Link></Nav.Link> </NavDropdown.Item> 
+              
+              
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Sobre nosotros
+              <NavDropdown.Item ><Nav.Link href="/productos"><Link className='text-dark' to="/categorias/women's clothing">Sobre devoluciones</Link></Nav.Link> </NavDropdown.Item>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

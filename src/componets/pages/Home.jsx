@@ -1,32 +1,24 @@
 
 
-import Img1 from "../../assets/gravitalogo.jpg"
+import Img1 from "../../assets/Ilustraciones-Gravita-06.jpg"
+import Img2 from "../../assets/Ilustraciones-Gravita-11.jpg"
+import Img3 from "../../assets/Ilustraciones-Gravita-22.jpg"
+import Img4 from "../../assets/Ilustraciones-Gravita-24.jpg"
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+
+;
 
 function Home() {
   return (
   <>
-  <h1 className="text-primary text-center m-5">HOME</h1>
-    <Row xs={1} md={2} className="g-4">
+  <div className="row">
+
+    <Card className="bg-dark text-white col-lg-12 m-5">
+      <Card.Img className="img-fluid" src={Img1} alt="Card image" />
+      
         
-      {Array.from({ length: 4 }).map((_, idx) => (
-        <Col>
-          <Card>
-            <Card.Img variant="top" src={Img1} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                long
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+    </Card></div>
+    
     </>
   );
 }

@@ -7,12 +7,7 @@ function ProductItem({ productos }) {
 
   return (
     <div className="container ">
-      <div d-flex justify-content-center>
-        {" "}
-        <Button className="m-2 " size="lg" variant="primary">
-          <a href="/productos" className="text-dark">Volver</a>
-        </Button>
-      </div>
+      
 
       <div>
         <h4>{producto.title}</h4>
@@ -21,6 +16,11 @@ function ProductItem({ productos }) {
         <p>{producto.description}</p>
         <p>$ {producto.price}</p>
         <p>rating: {producto.rating.rate}</p>
+      </div><div className="d-flex justify-content-center">
+        {" "}
+        <Button className="m-2 " size="lg" variant="primary">
+          <a href="/productos" className="text-dark">Volver</a>
+        </Button>
       </div>
     </div>
   );
