@@ -1,10 +1,46 @@
-.saludo{
 
-    background-image: url(../assets/TramasFondos-Gravita-02.png);
-    background-size: cover;
-    
-    border:none;
-    padding: 15px;
-    
+.img-intro{
+    background-image: url(./../assets/fondo1.jpg);
+
+color:black;
+border-radius: 10px;
+border: none;
+
+font-family: 'Bargemo', sans-serif;
+font-size: 2em;
+                                                
+
+}
+.btn-ingreso {
+    background-color: blanchedalmond;
+    border: none;
+    color: black;
+ 
 }
 
+
+.fondo-intro div a {
+    text-decoration: none;
+    color:darkslategrey;
+    font-weight: bold;
+    height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+
+.setumisma{
+    width: 14em;
+    height: 9em;
+    border-radius: 50px;
+    padding: 1em;
+    
+
+}
+@media (max-width: 540px) {
+    .setumisma {
+        display: none;
+    }}

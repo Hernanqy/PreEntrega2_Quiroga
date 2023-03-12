@@ -1,22 +1,20 @@
-import React from 'react';
-import './ItemList.css'
-const ItemListContainer = ({greeting}) => {
-    return (
-        
-             <div>
-               <div className="card-header text-center display-1 text-dark">{greeting}</div>
-      <div className="card  saludo mb-3 mt-5">
-       
+import React from "react";
+import "./ItemList.css";
+import Img7 from "./../assets/setumisma.png"
+import { Button } from "react-bootstrap";
 
-  <div className="card-body">
-    <h5 className="card-title text-center">Todo lo nuevo Ya Disponible</h5>
-    <p className="card-text"></p>
-  </div>
-</div>
-    </div>
+const ItemListContainer = ({ greeting }) => {
+  return (
+    <div>
+      <div className="fondo-intro ">
+        <div className="img-intro " >
+          <div className="d-flex justify-content-center p-5"><h1>{greeting}</h1></div>
+          <a href="/productos"><img className="setumisma" src="https://res.cloudinary.com/dvrq1qlac/image/upload/v1678656220/GRAVITA/WhatsApp_Image_2023-02-25_at_19.33.04_g0dcmn.jpg" alt="se tu misma" />  <Button className="btn-ingreso"> Ingresar en la tienda</Button></a>
         
-    );
-}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ItemListContainer;
-
